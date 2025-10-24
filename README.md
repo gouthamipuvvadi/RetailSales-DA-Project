@@ -7,8 +7,6 @@ A concise, production-ready data analytics project on retail transactions. It de
 - A simple sales forecasting baseline (regularized linear model on calendar features)
 - Reproducible pipeline scripts and basic tests
 
-> Fits a 5–10 minute walkthrough for interviews.
-
 ## Project structure
 
 ```
@@ -50,17 +48,6 @@ pytest -q
 ```
 
 Artifacts will appear under `data/processed/` and `reports/figures/`.
-
-## Talking points for your 5–10 minute video
-
-1. **Business problem**: Improve understanding of sales trends and customer value to support category planning.
-2. **Data**: ~3.5k transactions across 2023–2024 with store, category, pricing, discounting, and payments.
-3. **Quality checks**: Dtypes, missingness, dedupe, non-negative prices/quantities, returns handling.
-4. **EDA highlights**: Sales by category/city over time, weekday/seasonality, discount impact.
-5. **Segmentation**: RFM scoring → identify top cohorts.
-6. **Model**: Calendar-based baseline to predict next-month sales; discuss limitations and future work (external events, promos, holidays, better time-series models).
-7. **Results**: PNG charts + `reports/summary.md`.
-8. **Reproducibility**: Single entry-point `main.py`, small test, pinned requirements.
 
 ## License
 
